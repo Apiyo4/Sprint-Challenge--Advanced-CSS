@@ -164,8 +164,12 @@ p {
 .navigate {
   margin-left: 3%;
   background-color: #f4f4f4;
-  max-width: 500px;
-  margin: 0 auto;
+}
+@media (max-width:500px) {
+  .navigate {
+    max-width: 500px;
+    margin: 0 auto;
+  }
 }
 .navigate h1 {
   padding-top: 23px;
@@ -193,6 +197,11 @@ p {
   font-size: 130%;
   color: black;
   font-weight: bold;
+}
+@media (max-width:500px) {
+  .navigate nav a {
+    font-size: 100%;
+  }
 }
 footer {
   color: #22283B;
@@ -227,8 +236,11 @@ footer {
   height: 100%;
 }
 @media (max-width:500px) {
-  .home .space-images img .sky,
-  .home .space-images img .launch {
+  .home .space-images .blast {
+    width: 100%;
+  }
+  .home .space-images .sky,
+  .home .space-images .launch {
     display: none;
   }
 }

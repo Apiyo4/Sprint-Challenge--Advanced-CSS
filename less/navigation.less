@@ -2,8 +2,10 @@
 .navigate{
     margin-left: 3%;
     background-color: #f4f4f4;
-    max-width: 500px;
+    @media @phone{
+        max-width: 500px;
     margin: 0 auto;
+    }
     
 h1{
     padding-top: 23px;
@@ -27,6 +29,9 @@ a{
     font-size: 130%;
     color: black;
     font-weight: bold;
+    @media @phone{
+        font-size: 100%;
+        }
 }
 }
 }
