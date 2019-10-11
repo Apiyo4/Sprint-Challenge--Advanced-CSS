@@ -160,6 +160,31 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.navigate {
+  margin-left: 3%;
+  background-color: #E8E8E8;
+}
+.navigate h1 {
+  padding-top: 18px;
+  margin-top: 28px;
+  text-align: center;
+  font-size: 240%;
+  margin-bottom: 18px;
+}
+.navigate nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-left: 34%;
+  margin-right: 34%;
+  padding-bottom: 20px;
+}
+.navigate nav a {
+  text-decoration: none;
+  font-size: 130%;
+  color: black;
+  font-weight: bold;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
