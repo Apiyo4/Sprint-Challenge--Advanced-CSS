@@ -122,10 +122,6 @@ q:after {
   content: '';
   content: none;
 }
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
 * {
   box-sizing: border-box;
 }
@@ -236,6 +232,14 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  width: fit-content;
+  padding: 12px 8% 12px 8%;
+  background-color: #22283A;
+  border-radius: 5px;
+  color: #F1F1F1;
+  font-size: 1rem;
 }
 .home .walk .walk-img {
   width: 46%;
