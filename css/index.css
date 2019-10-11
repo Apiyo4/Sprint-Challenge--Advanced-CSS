@@ -290,6 +290,10 @@ footer {
   color: #F1F1F1;
   font-size: 1rem;
 }
+.home .walk .walk-text .btn:hover {
+  background-color: blue;
+  color: black;
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
