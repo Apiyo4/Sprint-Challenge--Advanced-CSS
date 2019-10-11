@@ -159,7 +159,12 @@ p {
 }
 @media (max-width:500px) {
   .container {
-    max-width: 500px;
+    max-width: 300px;
+  }
+}
+@media (max-width:800px) {
+  .container {
+    max-width: 550px;
   }
 }
 .navigate {
@@ -171,24 +176,26 @@ p {
     max-width: 500px;
     margin: 0 auto;
     width: 100%;
-    position: fixed;
-    left: 3%;
-    top: 24px;
+  }
+}
+@media (max-width:800px) {
+  .navigate {
+    max-width: 800px;
   }
 }
 .navigate h1 {
   padding-top: 23px;
   margin-top: 24px;
   text-align: center;
-  font-size: 240%;
+  font-size: 4rem;
   margin-bottom: 18px;
 }
 .navigate nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin: 0 auto;
-  margin-left: 34%;
-  margin-right: 34%;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
   padding-bottom: 20px;
 }
 @media (max-width:500px) {
@@ -202,10 +209,14 @@ p {
   font-size: 130%;
   color: black;
   font-weight: bold;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 @media (max-width:500px) {
   .navigate nav a {
-    font-size: 100%;
+    font-size: 62.5%;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 }
 footer {
@@ -217,6 +228,29 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home .main-header {
+  max-width: 800px;
+}
+@media (max-width:800px) {
+  .home .main-header {
+    max-width: 650px;
+  }
+  .home .main-header img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+}
+@media (max-width:500px) {
+  .home .main-header {
+    max-width: 500px;
+  }
+  .home .main-header img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
 }
 .home .intro h2 {
   padding: 15px;
