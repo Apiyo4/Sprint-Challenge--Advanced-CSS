@@ -1,6 +1,25 @@
 // Home Content
 
 .home {
+  .main-header{
+  max-width: 800px;
+  @media @tablet{
+    max-width: 650px;
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+  }
+  @media @phone{
+    max-width: 500px;
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+  }
+  }
 
   .intro {
 
@@ -18,12 +37,24 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    @media @phone{
+      display: block;
+       }
 
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+    
+     }
+     @media @phone{
+      .blast{
+        width: 100%;
+       }
+      .sky, .launch{
+        display: none;
+       }
     }
   }
 
@@ -45,9 +76,18 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+    @media @phone{
+      display: flex;
+      flex-direction: column-reverse;
+      padding-left: 15px;
+      padding-right: 15px; 
+    }
 
     .walk-text {
       width: 50%;
+      @media @phone{
+        width: 100%;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -58,6 +98,12 @@
       }
 
       .btn {
+        &:hover {
+          background-color: blue;
+          color: black;
+        }
+        .button(fit-content, @btnPadding, @btn-bg-color, 5px, @sea-shell);  
+        font-size: 1rem;
       }
     }
 
